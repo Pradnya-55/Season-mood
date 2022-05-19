@@ -24,26 +24,59 @@
                 justify-content: space-evenly;
                 margin-top: 20px;
             }
+            .title{
+                text-align: center;
+                margin: 5px;
+            }
+            .title-container{
+                background-color: aquamarine;
+                font-size:30px ;
+                padding: 0;
+                margin: 10px;
+            }
 
 
 
         </style>
+        <script>
+
+            function monsoon()
+            {
+                document.getElementById("img-season").src='./img/monsoon.png';
+
+            }
+            function winter()
+            {
+                document.getElementById("img-season").src='./img/winter.png';
+
+            }
+            function summer()
+            {
+                document.getElementById("img-season").src='./img/summer.png';
+
+            }
+         </script>   
+
+
          
 
 
     </head>
     <body>
+        <div class="title-container">
+        <h1 class="title">Season Mood😎(Theme Changer)</h1>
+        </div>
 
 
-        <img src="./img/summer.png" class="img-season"/>
+        <img src="./img/summer.png" id="img-season"class="img-season"/>
         <div class="btn-container">
-            <button class="btn-season">
+            <button class="btn-season" onclick="summer()">
                 Summer
             </button>
-            <button class="btn-season">
+            <button class="btn-season" onClick="monsoon()">
                 Monsoon
             </button>
-            <button class="btn-season">
+            <button class="btn-season" onClick="winter()">
                 Winter
             </button>
 
